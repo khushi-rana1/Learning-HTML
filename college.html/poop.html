@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Poop Emoji</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f0f0;
+    }
+
+    .poop {
+      position: relative;
+      width: 120px;
+      height: 120px;
+    }
+
+    /* poop layers */
+    .layer {
+      position: absolute;
+      background: #6b4f2a;
+      border-radius: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .layer1 {
+      width: 120px;
+      height: 60px;
+      bottom: 0;
+    }
+
+    .layer2 {
+      width: 90px;
+      height: 50px;
+      bottom: 40px;
+    }
+
+    .layer3 {
+      width: 60px;
+      height: 40px;
+      bottom: 70px;
+    }
+
+    .layer4 {
+      width: 40px;
+      height: 30px;
+      bottom: 95px;
+    }
+
+    /* eyes */
+    .eye {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: white;
+      border-radius: 50%;
+      top: 60px;
+    }
+
+    .eye.left { left: 40px; }
+    .eye.right { right: 40px; }
+
+    .pupil {
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      background: black;
+      border-radius: 50%;
+      top: 4px;
+      left: 4px;
+    }
+
+    /* smile */
+    .smile {
+      position: absolute;
+      width: 40px;
+      height: 20px;
+      border-bottom: 3px solid black;
+      border-radius: 50%;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="poop">
+    <div class="layer layer1"></div>
+    <div class="layer layer2"></div>
+    <div class="layer layer3"></div>
+    <div class="layer layer4"></div>
+    <div class="eye left"><div class="pupil"></div></div>
+    <div class="eye right"><div class="pupil"></div></div>
+    <div class="smile"></div>
+  </div>
+</body>
+</html>
